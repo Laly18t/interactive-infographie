@@ -1,0 +1,27 @@
+@font-face {
+    font-family: CatShop;
+    src: url('./font/CatShop.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: Acme;
+    src: url('./font/Acme-Regular.ttf') format("truetype");
+}
+
+#app {
+    --color-chocolat: #42210B;
+    --color-cafe: #895B2C;
+    --color-beige: #FFF3E5;
+    --color-vert: #4F8051;
+
+
+    font-family: 'Acme';
+    color: var(--color-chocolat);
+    background-color: var(--color-beige);
+}
+
+h1,
+h2 {
+    font-size: 110px;
+    font-family: 'CatShop';
+}

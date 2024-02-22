@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+
+}
+
+#app {
+  max-width: 100%;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section {
+  width: 100%;
+  /* min-height: 100vh; */
+  /* background-color: tomato; */
+}
+
+
+.section.active {
+  background-color: var(--color-beige);
+}
+
+
+.section--world {
+  background-color: var(--color-beige);
+  height: 100vh;
+  max-height: 940px;
+
+  h1 {
+
+    color: var(--color-beige);
+    text-align: center;
+
+    b {
+      color: var(--color-vert);
+    }
+  }
+
+  .tache {
+    width: 100%;
+    height: 100vh;
+    max-height: 940px;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 50px 0;
+  }
+
+  .border {
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-chocolat);
+    height: 100vh;
+    max-height: 940px;
+    transform: translate(-100%, 0);
+  }
+
+  p {
+    font-size: 60px;
+    color: var(--color-chocolat);
+    margin-top: 40px;
+    /* text-align: right; */
+  }
+}
+
+/* Section 2 */
+.tasseCofee {
+  /* width: 30%; */
+  opacity: 0;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(0, -50%) scale(0.5);
+}
+
+.world {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, 0%);
+}
+
+
+
+/* Section capsule */
+.section--capsule {
+
+  margin-top: 30vh;
+
+  .tache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .title {
+    font-size: 150px;
+    text-align: center;
+  }
+
+
+
+  .legend {
+    font-size: 32px;
+  }
+
+  .capsules_calendar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .capsules_consumption {
+    font-size: 64px;
+    line-height: 100%;
+  }
+
+  .capsule_number {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+  }
+
+
+  .capsule_animation_container {
+    position: absolute;
+    top: 183px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .capsule_animation {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.section--time {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+
+  .container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .capsule_animation {
+    opacity: .4;
+  }
+
+  p {
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    line-height: 100%;
+
+    b {
+      font-size: 250px;
+    }
+  }
+}
+
+.section--recyclage {
+  padding-top: 100px;
+  background-color: var(--color-chocolat);
+  color: var(--color-beige);
+
+  &.first {
+    padding-top: 100px;
+  }
+
+  &.last {
+    padding-bottom: 200px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 150px;
+    text-transform: uppercase;
+    line-height: 100%;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .legend {
+    margin-top: 16px;
+    color: var(--color-vert);
+    text-align: center;
+    font-size: 60px;
+  }
+}
+
+
+
+.section--transport {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+
+  svg {
+    margin-left: -100px;
+    margin-right: -400px;
+  }
+}
+
+/* .section3>div {
+  width: 50%;
+  display: flex;
+
+  div {
+    width: 100%;
+  }
+}
+
+.section3>div:nth-child(1) {
+  background-color: rgba(137, 91, 44, 0.4);
+  border-radius: 50px;
+  height: 50vh;
+  padding: 20px;
+}
+
+.section3>div:nth-child(2) {
+  display: flex;
+
+  background-color: red;
+} */
