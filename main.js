@@ -28,11 +28,7 @@ document.querySelectorAll('.capsule_animation').forEach((element) => {
   });
 })
 
-
-// gsap.to(".textGreen", {
-//   scrollTrigger: ".section1", // start the animation when ".box" enters the viewport (once)
-// });
-
+// 1 - animation tasse de café
 gsap.to(".tasseCofee", {
   scrollTrigger: {
     trigger: ".tasseCofee",
@@ -41,11 +37,11 @@ gsap.to(".tasseCofee", {
   },
   opacity: 1,
   scale: 1,
-  duration: 2
+  duration: 1
 });
 
 
-
+// 2 - animation texte en dessous de la tasse de café
 gsap.to(".test", {
   scrollTrigger: {
     trigger: ".world",
@@ -55,6 +51,23 @@ gsap.to(".test", {
   x: 400,
   duration: 3
 });
+
+
+
+gsap.to(".section--time", {
+  scrollTrigger: {
+    trigger: ".section--time",
+    start: "top top",
+    toggleActions: "restart pause reverse none",
+    end: "+=150px",
+    scrub: 1
+  },
+  y: 350,
+  duration: 2
+});
+
+
+
 
 
 // document.querySelectorAll('.section').forEach((el) => {

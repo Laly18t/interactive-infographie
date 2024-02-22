@@ -28,13 +28,14 @@
 
 .section--world {
   background-color: var(--color-beige);
-  height: 100vh;
-  max-height: 940px;
+  height: 200vh;
+  max-height: 1240px;
 
   h1 {
     background-color: var(--color-chocolat);
     color: var(--color-beige);
     text-align: center;
+    height: 50vh;
 
     b {
       color: var(--color-vert);
@@ -87,7 +88,7 @@
   opacity: 0;
   width: 500px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 15%;
   transform: translate(0, -50%) scale(0.5);
 }
@@ -95,7 +96,7 @@
 .world {
   width: 400px;
   position: absolute;
-  bottom: 0;
+  bottom: 200px;
   right: 0;
   transform: translate(0, 0%);
 }
@@ -168,6 +169,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
   overflow: hidden;
+  height: 100vh;
 
   .container {
     position: absolute;
