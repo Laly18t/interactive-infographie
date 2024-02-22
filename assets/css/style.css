@@ -32,7 +32,7 @@
   max-height: 940px;
 
   h1 {
-
+    background-color: var(--color-chocolat);
     color: var(--color-beige);
     text-align: center;
 
@@ -76,8 +76,8 @@
   p {
     font-size: 60px;
     color: var(--color-chocolat);
-    margin-top: 40px;
-    /* text-align: right; */
+    margin-top: 70vh;
+    /* text-align: right; 648 */
   }
 }
 

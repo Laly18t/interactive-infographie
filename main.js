@@ -50,8 +50,7 @@ gsap.to(".test", {
   scrollTrigger: {
     trigger: ".world",
     toggleActions: "restart pause reverse none",
-    scrub: 1,
-    markers: true,
+    scrub: 1
   },
   x: 400,
   duration: 3
