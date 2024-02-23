@@ -65,11 +65,25 @@ gsap.to(".pTransition", {
 });
 
 //animation aparition caspule
+
+gsap.from('.section--time', {
+  scrollTrigger: {
+    trigger: ".pTransition",
+    start: "top top",
+    end: "top",
+    toggleActions: "restart pause reverse none",
+    scrub: 4
+  },
+  yPercent: -50,
+  paused: true,
+  duration: 3
+});
+
 gsap.to(".section--time", {
   scrollTrigger: {
     trigger: ".pTransition",
-    start: "bottom center",
-    end: "+=80",
+    start: "+=300 center",
+    end: "+=150",
     markers: true,
     scrub: 1
   },
