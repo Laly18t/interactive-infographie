@@ -31,6 +31,7 @@
   height: 200vh;
   max-height: 1240px;
 
+
   h1 {
     background-color: var(--color-chocolat);
     color: var(--color-beige);
@@ -165,11 +166,19 @@
   }
 }
 
+.pTransition {
+  margin-top: 50px;
+  font-size: 70px;
+  text-align: center;
+  opacity: 0;
+}
+
 .section--time {
   padding-top: 200px;
   padding-bottom: 200px;
   overflow: hidden;
   height: 100vh;
+  opacity: 0;
 
   .container {
     position: absolute;

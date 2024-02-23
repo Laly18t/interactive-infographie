@@ -32,7 +32,6 @@ document.querySelectorAll('.capsule_animation').forEach((element) => {
 gsap.to(".tasseCofee", {
   scrollTrigger: {
     trigger: ".tasseCofee",
-    markers: true,
     scrub: 1
   },
   opacity: 1,
@@ -53,16 +52,43 @@ gsap.to(".test", {
 });
 
 
+//animation transition "soit"
+gsap.to(".pTransition", {
+  scrollTrigger: {
+    trigger: ".pTransition",
+    start: "center center",
+    end: "+=50",
+    markers: true,
+    scrub: 1
+  },
+  opacity: 1
+});
 
+//animation aparition caspule
+gsap.to(".section--time", {
+  scrollTrigger: {
+    trigger: ".pTransition",
+    start: "bottom center",
+    end: "+=80",
+    markers: true,
+    scrub: 1
+  },
+  opacity: 1
+});
+
+
+
+// animation transition capsule 
 gsap.to(".section--time", {
   scrollTrigger: {
     trigger: ".section--time",
     start: "top top",
     toggleActions: "restart pause reverse none",
-    end: "+=150px",
+    end: "+=200px",
+    // markers: true,
     scrub: 1
   },
-  y: 350,
+  y: 400,
   duration: 2
 });
 
