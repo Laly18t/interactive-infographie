@@ -119,6 +119,9 @@
     object-fit: fill;
   }
 
+  .section--capsuleElement1, .section--capsuleElement2, .section--capsuleElement3 {
+    opacity: 0;
+  }
   .title {
     font-size: 150px;
     text-align: center;

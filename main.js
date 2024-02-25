@@ -32,9 +32,8 @@ document.querySelectorAll('.capsule_animation').forEach((element) => {
 gsap.to(".tasseCofee", {
   scrollTrigger: {
     trigger: ".tasseCofee",
-    end: "center",
-    markers: true,
-
+    start: "-=500px",
+    end: "+=200px",
     scrub: 1
   },
   opacity: 1,
@@ -53,6 +52,43 @@ gsap.to(".test", {
   x: 400,
   duration: 3
 });
+
+
+// 3 - animation div capsule
+gsap.to(".section--capsuleElement1", {
+  scrollTrigger: {
+    trigger: ".tache",
+    markers: true,
+    start: "center -=200px",
+    end: "+=200px",
+    toggleActions: "restart pause reverse none",
+    scrub: 1
+  },
+  opacity: 1
+});
+gsap.to(".section--capsuleElement2", {
+  scrollTrigger: {
+    trigger: ".tache",
+    start: "center -=300px",
+    end: "+=100px",
+    toggleActions: "restart pause reverse none",
+    scrub: 1
+  },
+  opacity: 1
+});
+gsap.to(".section--capsuleElement3", {
+  scrollTrigger: {
+    trigger: ".tache",
+    start: "center -=400px",
+    end: "+=100px",
+    toggleActions: "restart pause reverse none",
+    scrub: 1
+  },
+  opacity: 1
+});
+
+
+
 
 
 //animation transition "soit"
