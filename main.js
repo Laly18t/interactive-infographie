@@ -54,11 +54,10 @@ gsap.to(".test", {
 });
 
 
-// 3 - animation div capsule
+// 3 - animation div utilisation capsule
 gsap.to(".section--capsuleElement1", {
   scrollTrigger: {
     trigger: ".tache",
-    markers: true,
     start: "center -=200px",
     end: "+=200px",
     toggleActions: "restart pause reverse none",
@@ -88,6 +87,18 @@ gsap.to(".section--capsuleElement3", {
 });
 
 
+// 4 - animation calendrier
+gsap.to(".capsules_calendar", {
+  scrollTrigger: {
+    trigger: ".capsules_calendar",
+    start: "top",
+    end: "+=200px",
+    markers: true,
+    scrub: 1
+  },
+  y: 200,
+  duration: 3
+});
 
 
 
@@ -122,7 +133,6 @@ gsap.to(".section--time", {
     trigger: ".pTransition",
     start: "+=300 center",
     end: "+=150",
-    markers: true,
     scrub: 1
   },
   opacity: 1
@@ -134,11 +144,9 @@ gsap.to(".section--time", {
 gsap.to(".section--time", {
   scrollTrigger: {
     trigger: ".section--time",
-
     start: "top top",
     toggleActions: "restart pause reverse none",
     end: "+=200px",
-    // markers: true,
     scrub: 1
   },
   y: 400,
