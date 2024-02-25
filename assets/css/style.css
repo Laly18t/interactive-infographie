@@ -33,6 +33,7 @@
 
 
   h1 {
+    padding-top: 100px;
     background-color: var(--color-chocolat);
     color: var(--color-beige);
     text-align: center;
@@ -89,8 +90,8 @@
   opacity: 0;
   width: 500px;
   position: absolute;
-  top: 40%;
-  right: 15%;
+  top: 35%;
+  right: 25%;
   transform: translate(0, -50%) scale(0.5);
 }
 

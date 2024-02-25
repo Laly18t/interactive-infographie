@@ -32,6 +32,9 @@ document.querySelectorAll('.capsule_animation').forEach((element) => {
 gsap.to(".tasseCofee", {
   scrollTrigger: {
     trigger: ".tasseCofee",
+    end: "center",
+    markers: true,
+
     scrub: 1
   },
   opacity: 1,
@@ -58,7 +61,6 @@ gsap.to(".pTransition", {
     trigger: ".pTransition",
     start: "center center",
     end: "+=50",
-    markers: true,
     scrub: 1
   },
   opacity: 1
@@ -96,6 +98,7 @@ gsap.to(".section--time", {
 gsap.to(".section--time", {
   scrollTrigger: {
     trigger: ".section--time",
+
     start: "top top",
     toggleActions: "restart pause reverse none",
     end: "+=200px",
