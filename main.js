@@ -93,7 +93,6 @@ gsap.to(".capsules_calendar", {
     trigger: ".capsules_calendar",
     start: "top",
     end: "+=200px",
-    markers: true,
     scrub: 1
   },
   y: 200,
@@ -123,7 +122,7 @@ gsap.from('.section--time', {
     toggleActions: "restart pause reverse none",
     scrub: 4
   },
-  yPercent: -50,
+  yPercent: -10,
   paused: true,
   duration: 3
 });
@@ -153,6 +152,18 @@ gsap.to(".section--time", {
   duration: 2
 });
 
+
+// animation question recyclage
+gsap.to(".section--recyclageQuestion", {
+  scrollTrigger: {
+    trigger: ".section--recyclage",
+    start: "+=200 center",
+    end: "+=150",
+    markers: true,
+    scrub: 1
+  },
+  opacity: 1
+});
 
 
 

@@ -216,7 +216,13 @@
 }
 
 .section--recyclage {
+
+  .section--recyclageQuestion {
+    opacity: 0;
+  }
+
   padding-top: 100px;
+  padding-bottom: 30vh;
   background-color: var(--color-chocolat);
   color: var(--color-beige);
 
@@ -237,7 +243,6 @@
   }
 
   .title::after {
-    content: '';
     animation: write-text 10s infinite;
   }
 
