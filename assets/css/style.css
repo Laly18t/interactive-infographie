@@ -239,58 +239,9 @@
     font-size: 150px;
     text-transform: uppercase;
     line-height: 100%;
-    transition: 2s;
   }
 
-  .title::after {
-    animation: write-text 10s infinite;
-  }
 
-  @keyframes write-text {
-    0% {
-      content: '4';
-    }
-
-    10% {
-      content: '40 ';
-    }
-
-    20% {
-      content: '40 0';
-    }
-
-    30% {
-      content: '40 00';
-    }
-
-    40% {
-      content: '40 000';
-    }
-
-    50% {
-      content: '40 000 t';
-    }
-
-    60% {
-      content: '40 000 to';
-    }
-
-    70% {
-      content: '40 000 ton';
-    }
-
-    80% {
-      content: '40 000 tonn';
-    }
-
-    90% {
-      content: '40 000 tonne';
-    }
-
-    100% {
-      content: '40 000 tonnes';
-    }
-  }
 
   .subtitle {
     font-size: 24px;

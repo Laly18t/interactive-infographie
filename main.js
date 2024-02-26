@@ -7,6 +7,7 @@ import './assets/css/marquee.css'
 import { ScrollTrigger } from 'gsap/all';
 import Marquee from './src/Marquee';
 
+// gsap.registerPlugin(ScrambleTextPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -101,7 +102,7 @@ gsap.to(".capsules_calendar", {
 
 
 
-//animation transition "soit"
+// 5 - animation transition "soit"
 gsap.to(".pTransition", {
   scrollTrigger: {
     trigger: ".pTransition",
@@ -112,7 +113,7 @@ gsap.to(".pTransition", {
   opacity: 1
 });
 
-//animation aparition caspule
+// 6 - animation aparition caspule
 
 gsap.from('.section--time', {
   scrollTrigger: {
@@ -126,7 +127,6 @@ gsap.from('.section--time', {
   paused: true,
   duration: 3
 });
-
 gsap.to(".section--time", {
   scrollTrigger: {
     trigger: ".pTransition",
@@ -139,7 +139,7 @@ gsap.to(".section--time", {
 
 
 
-// animation transition capsule 
+// 7 - animation transition capsule 
 gsap.to(".section--time", {
   scrollTrigger: {
     trigger: ".section--time",
@@ -153,7 +153,7 @@ gsap.to(".section--time", {
 });
 
 
-// animation question recyclage
+// 8 - animation question recyclage
 gsap.to(".section--recyclageQuestion", {
   scrollTrigger: {
     trigger: ".section--recyclage",
@@ -165,15 +165,10 @@ gsap.to(".section--recyclageQuestion", {
   opacity: 1
 });
 
-
-
-
-// document.querySelectorAll('.section').forEach((el) => {
-//   ScrollTrigger.create({
-//     trigger: el,
-//     end: "300px",
-//     onToggle: (self) => {
-//       el.classList.toggle('active', self.isActive)
-//     },
-//   });
-// })
+// 9 - animation tonne
+// gsap.to(".title", {
+//   duration: 3, scrambleText: 
+//   { text: "ScrambleText allows you to animate the scrambling of text.",
+//   revealDelay: 0.5 }
+//   // tweenLength: false 
+// });
