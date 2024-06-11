@@ -159,7 +159,6 @@ gsap.to(".section--recyclageQuestion", {
     trigger: ".section--recyclage",
     start: "+=200 center",
     end: "+=150",
-    markers: true,
     scrub: 1
   },
   opacity: 1
